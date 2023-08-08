@@ -31,3 +31,16 @@ C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\obj\Debug\net7.
 C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\obj\Debug\net7.0\ApiTravelogue.pdb
 C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\obj\Debug\net7.0\ApiTravelogue.genruntimeconfig.cache
 C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\obj\Debug\net7.0\ref\ApiTravelogue.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\AWSSDK.Core.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\AWSSDK.SecurityToken.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\DnsClient.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\MongoDB.Bson.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\MongoDB.Driver.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\MongoDB.Driver.Core.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\MongoDB.Libmongocrypt.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\SharpCompress.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\Snappier.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\ZstdSharp.dll
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Administrador\apiTravelogue\ApiTravelogue\ApiTravelogue\bin\Debug\net7.0\runtimes\win\native\mongocrypt.dll
