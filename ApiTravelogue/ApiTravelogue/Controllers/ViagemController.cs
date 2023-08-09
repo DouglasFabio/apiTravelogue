@@ -1,7 +1,10 @@
 ﻿using ApiTravelogue.Models;
 using ApiTravelogue.Services;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver;
+using System.Diagnostics;
 
 namespace ApiTravelogue.Controllers
 {
@@ -26,5 +29,20 @@ namespace ApiTravelogue.Controllers
 
             return viagem;
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Put(string id, [FromBody] Viagem viagem)
+        {
+            await _viagemServices.UpdateAsync(id, viagem);
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            await _viagemServices.DeleteAsync(id);
+            return NoContent();
+        }
+
     }
 }
