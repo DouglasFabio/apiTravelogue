@@ -8,13 +8,13 @@ namespace ApiTravelogue.Services
     {
         private readonly IMongoCollection<Viagem> _viagemCollection;
 
-        public ViagemServices(IOptions<ViagemDatabaseSettings> produtoServices)
+        public ViagemServices(IOptions<ViagemDatabaseSettings> viagemServices)
         {
-            var mongoClient = new MongoClient(produtoServices.Value.ConnectionString);
-            var mongoDatabase = mongoClient.GetDatabase(produtoServices.Value.DatabaseName);
+            var mongoClient = new MongoClient(viagemServices.Value.ConnectionString);
+            var mongoDatabase = mongoClient.GetDatabase(viagemServices.Value.DatabaseName);
 
             _viagemCollection = mongoDatabase.GetCollection<Viagem>
-                (produtoServices.Value.ViagemCollectionName);
+                (viagemServices.Value.ViagemCollectionName);
         }
 
         public async Task<List<Viagem>> GetAsync() => await _viagemCollection.Find(v => true).Sort(Builders<Viagem>.Sort.Descending(v => v.DateTravel)).ToListAsync();
