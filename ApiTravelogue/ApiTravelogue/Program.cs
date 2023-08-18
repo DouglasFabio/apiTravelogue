@@ -8,6 +8,7 @@ builder.Services.Configure<ViagemDatabaseSettings>
     (builder.Configuration.GetSection("TravelogueStoreData"));
 
 builder.Services.AddSingleton<ViagemServices>();
+builder.Services.AddSingleton<EntradaServices>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
