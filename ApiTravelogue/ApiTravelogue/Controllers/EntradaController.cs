@@ -11,54 +11,54 @@ namespace ApiTravelogue.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ViagemController : ControllerBase
+    public class EntradaController : ControllerBase
     {
-        private readonly ViagemServices _viagemServices;
+        private readonly EntradaServices _entradaServices;
 
-        public ViagemController(ViagemServices viagemServices)
+        public EntradaController(EntradaServices entradaServices)
         {
-            _viagemServices = viagemServices;
+            _entradaServices = entradaServices;
         }
 
         [HttpGet]
-        public async Task<List<Viagem>> GetViagens() => await _viagemServices.GetAsync();
+        public async Task<List<Entrada>> GetEntradas() => await _entradaServices.GetAsync();
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Viagem>> GetViagem(string id)
+        public async Task<ActionResult<Entrada>> GetEntrada(string id)
         {
-            var viagem = await _viagemServices.GetAsync(id);
+            var entrada = await _entradaServices.GetAsync(id);
 
-            if (viagem == null)
+            if (entrada == null)
             {
-                return NotFound("Viagem não encontrada.");
+                return NotFound("Entrada não encontrada.");
             }
 
-            return viagem;
+            return entrada;
         }
 
         [HttpPost]
-        public async Task<Viagem> PostViagem(Viagem viagem)
+        public async Task<Entrada> PostEntrada(Entrada entrada)
         {
-            await _viagemServices.CreateAsync(viagem);
+            await _entradaServices.CreateAsync(entrada);
 
-            return viagem;
+            return entrada;
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(string id, [FromBody] Viagem viagem)
+        public async Task<IActionResult> Put(string id, [FromBody] Entrada entrada)
         {
-            if (viagem == null)
+            if (entrada == null)
             {
                 return NotFound("Viagem não encontrada.");
             }
-            await _viagemServices.UpdateAsync(id, viagem);
+            await _entradaServices.UpdateAsync(id, entrada);
             return Ok("Viagem atualizada com sucesso!");
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
-            await _viagemServices.DeleteAsync(id);
+            await _entradaServices.DeleteAsync(id);
             return Ok("Viagem deletada com sucesso!");
         }
 

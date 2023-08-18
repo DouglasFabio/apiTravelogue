@@ -20,5 +20,9 @@ namespace ApiTravelogue.Models
 
         [BsonElement("midiaPath")]
         public string MidiaPath { get; set; } = null!;
+
+
+        [BsonElement("codTravel")]
+        public ObjectId CodTravel { get; set; }
     }
 }
