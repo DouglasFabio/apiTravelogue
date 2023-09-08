@@ -3,6 +3,7 @@ using ApiTravelogue.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
@@ -21,7 +22,7 @@ namespace ApiTravelogue.Controllers
         }
 
         [HttpGet]
-        public async Task<List<Entrada>> GetEntradas() => await _entradaServices.GetAsync();
+        public async Task<List<Entrada>> GetEntradas() => await _entradaServices.GetEntradas();
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Entrada>> GetEntrada(string id)
@@ -33,7 +34,7 @@ namespace ApiTravelogue.Controllers
                 return NotFound("Entrada não encontrada.");
             }
 
-            return entrada;
+            return Ok(entrada);
         }
 
         [HttpPost]

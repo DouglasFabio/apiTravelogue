@@ -24,5 +24,6 @@ namespace ApiTravelogue.Models
 
         [BsonElement("codTravel")]
         public string CodTravel { get; set; }
+
     }
 }
