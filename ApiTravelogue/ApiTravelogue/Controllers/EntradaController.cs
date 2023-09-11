@@ -28,13 +28,25 @@ namespace ApiTravelogue.Controllers
         public async Task<ActionResult<Entrada>> GetEntrada(string id)
         {
             var entrada = await _entradaServices.GetAsync(id);
+            var imagem = await _entradaServices.GetImagens(id);
 
             if (entrada == null)
             {
                 return NotFound("Entrada não encontrada.");
             }
+            else if (imagem == null)
+            {
+                return NotFound("Imagens não encontradas");
+            }else if(entrada != null)
+            {
+                return Ok(entrada);
+            }
+            else
+            {
+                return Ok(imagem);
+            }
 
-            return Ok(entrada);
+           
         }
 
         [HttpPost]
