@@ -24,31 +24,6 @@ namespace ApiTravelogue.Controllers
         [HttpGet]
         public async Task<List<Entrada>> GetEntradas() => await _entradaServices.GetEntradas();
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Entrada>> GetEntrada(string id)
-        {
-            var entrada = await _entradaServices.GetAsync(id);
-            var imagem = await _entradaServices.GetImagens(id);
-
-            if (entrada == null)
-            {
-                return NotFound("Entrada não encontrada.");
-            }
-            else if (imagem == null)
-            {
-                return NotFound("Imagens não encontradas");
-            }else if(entrada != null)
-            {
-                return Ok(entrada);
-            }
-            else
-            {
-                return Ok(imagem);
-            }
-
-           
-        }
-
         [HttpPost]
         public async Task<Entrada> PostEntrada(Entrada entrada)
         {
@@ -62,17 +37,17 @@ namespace ApiTravelogue.Controllers
         {
             if (entrada == null)
             {
-                return NotFound("Viagem não encontrada.");
+                return NotFound("Entrada não encontrada.");
             }
             await _entradaServices.UpdateAsync(id, entrada);
-            return Ok("Viagem atualizada com sucesso!");
+            return Ok("Entrada atualizada com sucesso!");
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
             await _entradaServices.DeleteAsync(id);
-            return Ok("Viagem deletada com sucesso!");
+            return Ok("Entrada deletada com sucesso!");
         }
 
     }

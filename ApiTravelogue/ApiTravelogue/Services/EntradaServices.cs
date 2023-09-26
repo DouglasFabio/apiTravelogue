@@ -20,7 +20,10 @@ namespace ApiTravelogue.Services
         public async Task<List<Entrada>> GetImagens(string idEntry) => await _entradaCollection.Find(i => i.Id == idEntry).ToListAsync();
         
         public async Task<List<Entrada>> GetEntradas() => await _entradaCollection.Find(v => true).Sort(Builders<Entrada>.Sort.Descending(v => v.DateVisit)).ToListAsync();
-
+        public async Task<List<Entrada>> GetEntrada(string idViagem)
+        {
+            return await _entradaCollection.Find(v => v.Id == idViagem).ToListAsync();
+        }
         public async Task<List<Entrada>> GetAsync(string idViagem)
         {
             return await _entradaCollection.Find(v => v.CodTravel == idViagem).ToListAsync();

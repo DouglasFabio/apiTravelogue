@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ot6ambK3WqVq7THkgGTA0rgJ+ZWBJcH5b5yNlbcN7DVoxz8raQf+2LYoOYOumDA//2h7/PaKUJmDrOagkPgKBg==",
+  "dgSpecHash": "4OCePoXtO+f5zAsKagpFDGkVWl+4Kbix46S1LbtqEo5sg29nFVp6hkk4HoAQTuNDXdCm1/X+Y4glo2tWQH6+7g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrador\\apiTravelogue\\ApiTravelogue\\ApiTravelogue\\ApiTravelogue.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\mongodb.bson\\2.20.0\\mongodb.bson.2.20.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\mongodb.driver\\2.20.0\\mongodb.driver.2.20.0.nupkg.sha512",
