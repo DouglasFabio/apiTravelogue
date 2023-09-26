@@ -24,6 +24,22 @@ namespace ApiTravelogue.Controllers
         [HttpGet]
         public async Task<List<Entrada>> GetEntradas() => await _entradaServices.GetEntradas();
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Entrada>> GetEntrada(string id)
+        {
+            var entrada = await _entradaServices.GetAsync(id);
+            if (entrada == null)
+            {
+                return NotFound("Entrada não encontrada.");
+            }
+            else
+            {
+              return Ok(entrada);
+            }
+
+           
+        }
+
         [HttpPost]
         public async Task<Entrada> PostEntrada(Entrada entrada)
         {
