@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "4OCePoXtO+f5zAsKagpFDGkVWl+4Kbix46S1LbtqEo5sg29nFVp6hkk4HoAQTuNDXdCm1/X+Y4glo2tWQH6+7g==",
+  "dgSpecHash": "RrnVWWnIm9RICbm/Wa50yDoBsN+bOmXBQ5GJ4cD4vR+WBqbmgZSDwEX8y8DP6TQuZzzt75QnnPa5mfexoyuIpQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrador\\apiTravelogue\\ApiTravelogue\\ApiTravelogue\\ApiTravelogue.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\confluent.kafka\\2.6.0\\confluent.kafka.2.6.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\librdkafka.redist\\2.6.0\\librdkafka.redist.2.6.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
@@ -25,6 +27,7 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
