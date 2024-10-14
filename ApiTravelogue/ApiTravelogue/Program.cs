@@ -14,7 +14,7 @@ builder.Services.AddSingleton<EntradaServices>();
 builder.Services.AddControllers();
 
 
-var kafkaConfig = new ProducerConfig { BootstrapServers = "localhost:9092" };
+var kafkaConfig = new ProducerConfig { BootstrapServers = "localhost:9092", SecurityProtocol = SecurityProtocol.Plaintext };
 builder.Services.AddSingleton<IProducer<Null, string>>(new ProducerBuilder<Null, string>(kafkaConfig).Build());
 
 
